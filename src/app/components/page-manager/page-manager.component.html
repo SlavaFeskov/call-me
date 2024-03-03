@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="pageManagerService.activePage">
+    <app-main-page class="animatable" [@slideOut] *ngSwitchCase="pageEnum.Main"></app-main-page>
+    <app-incoming-call-page class="animatable" [@slideInOut] *ngSwitchCase="pageEnum.Call"></app-incoming-call-page>
+    <app-credits-page class="animatable" [@slideInOut] *ngSwitchCase="pageEnum.Credits"></app-credits-page>
+</ng-container>

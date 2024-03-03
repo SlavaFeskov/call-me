@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .language-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 200px;
+        align-self: center;
+    }
+
+    .language-select-text {
+        align-self: center;
+        color: white;
+        font-size: 1.25rem;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,22 @@
+<div class="container">
+    <p class="caller-name">H. C. Andersen</p>
+    <div class="animate-container">
+        <div *ngIf="!callAccepted" class="incomming-call call-animatable" [@slideOut]>
+            <div>
+                <p class="caller-info">Incoming call</p>
+            </div>
+            <div class="call-buttons">
+                <img src="./images/call-decline.png" (click)="onCallDecline()" />
+                <img src="./images/call-accept.png" (click)="onCallAccept()" />
+            </div>
+        </div>
+        <div *ngIf="callAccepted" class="accepted-call call-animatable" [@slideIn]>
+            <div>
+                <p class="caller-info">{{timerText}}</p>
+            </div>
+            <div class="call-buttons accepted">
+                <img src="./images/call-decline.png" (click)="onCallDecline()" />
+            </div>
+        </div>
+    </div>
+</div>

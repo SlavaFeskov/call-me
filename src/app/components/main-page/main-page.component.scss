@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E4E98;
+    height: 100vh;
+    
+    >img {
+        width: 272px;
+        height: 155px;
+        align-self: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+        color: white;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
