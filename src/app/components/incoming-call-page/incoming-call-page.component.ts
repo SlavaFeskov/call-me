@@ -34,13 +34,13 @@ export class IncomingCallPageComponent implements OnInit, OnDestroy {
 
   public ngOnInit(): void {
     this.incommingCallAudio = new Audio();
-    this.incommingCallAudio.src = "../../../assets/audio/taskCompleted.mp3";
+    this.incommingCallAudio.src = "./assets/audio/taskCompleted.mp3";
     this.incommingCallAudio.loop = true;
     this.incommingCallAudio.load();
     this.incommingCallAudio.play();
 
     this.speakAudio = new Audio();
-    this.speakAudio.src = `../../../assets/audio/${this.pageManagerService.selectedLanguage}.mp3`;
+    this.speakAudio.src = `./assets/audio/${this.pageManagerService.selectedLanguage}.mp3`;
     this.speakAudio.loop = true;
     this.speakAudio.load();
   }
